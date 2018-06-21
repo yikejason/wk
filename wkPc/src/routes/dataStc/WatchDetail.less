@@ -1,0 +1,58 @@
+
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+.watchOptions_form{ 
+    margin-bottom: 40px;
+    .watchOptions_Box{
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row wrap;
+        .watchDate{
+            :global {
+                .ant-radio-button-wrapper-checked{
+                    border: none;
+                    -webkit-box-shadow: none;
+                    box-shadow:none;
+                    &:hover{
+                        border: none;
+                        -webkit-box-shadow:none;
+                        box-shadow:none;
+                    }
+                    &:active{
+                        border: none;
+                        -webkit-box-shadow:none;
+                        box-shadow:none;
+                    }
+                    span{
+                        border: none
+                    }
+                }
+                .ant-radio-button-wrapper:first-child {
+                    border: none;
+                }
+                .ant-radio-button-wrapper {
+                    border: none;
+                    &:not(:first-child)::before {
+                        content: "";
+                        display: block;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        position: absolute;
+                        background-color: #fff;
+                    }
+                }
+              }
+        }
+        .watchOptions_option{
+            .select{
+                width: 100px;
+            }
+        }  
+    }
+}
+.courseColor{
+    color: #1890ff;
+}

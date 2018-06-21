@@ -1,0 +1,49 @@
+
+@import '~antd/lib/style/themes/default.less';
+@import '../../utils/utils.less';
+
+.school{
+  background:#fff;
+}
+.salesExtra {
+  display: inline-block;
+  margin-right: 24px;
+  a {
+    color: @text-color;
+    margin-left: 24px;
+    &:hover {
+      color: @primary-color;
+    }
+    &.currentDate {
+      color: @primary-color;
+    }
+  }
+}
+
+.offlineCard {
+  :global {
+    .ant-tabs-ink-bar {
+      bottom: auto;
+    }
+    .ant-tabs-bar {
+      border-bottom: none;
+    }
+    .ant-tabs-nav-container-scrolling {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .ant-tabs-tab-prev-icon:before {
+      position: relative;
+      left: 6px;
+    }
+    .ant-tabs-tab-next-icon:before {
+      position: relative;
+      right: 6px;
+    }
+  }
+
+  :global(.ant-tabs-tab-active) h4 {
+    color: @primary-color;
+  }
+}
+

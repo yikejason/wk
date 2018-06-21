@@ -1,0 +1,58 @@
+.teacherOptions_form {
+  margin-bottom: 40px;
+}
+.teacherOptions_form .teacherOptions_Box {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper-checked {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper-checked:hover {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper-checked:active {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper-checked span {
+  border: none;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper:first-child {
+  border: none;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper {
+  border: none;
+}
+.teacherOptions_form .teacherOptions_Box .watchDate :global .ant-radio-button-wrapper:not(:first-child)::before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+}
+.teacherOptions_form .teacherOptions_Box .watchOptions_option .select {
+  width: 100px;
+}
+.study_tab :global .ant-table-title {
+  background: #fafafa;
+  padding-left: 20px;
+  font-family: 'PingFang SC Bold', 'PingFang SC';
+  font-weight: 650;
+  font-size: 18px;
+  color: #666;
+  line-height: 24px;
+}
+.study_tab :global .ant-table-thead tr th {
+  background: #fff;
+  font-weight: bold;
+}

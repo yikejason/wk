@@ -1,0 +1,75 @@
+.teacherOptions_form{ 
+    margin-bottom: 40px;
+    .teacherOptions_Box{
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: row wrap;
+        .watchDate{
+            :global {
+                .ant-radio-button-wrapper-checked{
+                    border: none;
+                    -webkit-box-shadow: none;
+                    box-shadow:none;
+                    &:hover{
+                        border: none;
+                        -webkit-box-shadow:none;
+                        box-shadow:none;
+                    }
+                    &:active{
+                        border: none;
+                        -webkit-box-shadow:none;
+                        box-shadow:none;
+                    }
+                    span{
+                        border: none
+                    }
+                }
+                .ant-radio-button-wrapper:first-child {
+                    border: none;
+                }
+                .ant-radio-button-wrapper {
+                    border: none;
+                    &:not(:first-child)::before {
+                        content: "";
+                        display: block;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        position: absolute;
+                        background-color: #fff;
+                    }
+                }
+              }
+        }
+        .watchOptions_option{
+            .select{
+                width: 100px;
+            }
+        }  
+    }
+}
+.study_tab{
+    // .column-center{
+    //     text-align: center;
+    // }
+    :global{
+        .ant-table-title{
+            background:#fafafa;
+            padding-left: 20px;
+            font-family: 'PingFang SC Bold', 'PingFang SC';
+            font-weight: 650;
+            font-size: 18px;
+            color: #666;
+            line-height: 24px;
+        }
+        .ant-table-thead{
+            tr{
+                th{
+                    background: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

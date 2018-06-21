@@ -1,0 +1,61 @@
+@import "~antd/lib/style/themes/default.less";
+@import "../../utils/utils.less";
+
+.card {
+  :global {
+    .ant-card-meta-title {
+      margin-bottom: 12px;
+      & > a {
+        color: @heading-color;
+      }
+    }
+    .ant-card-actions {
+      background: #f7f9fa;
+    }
+    .ant-card-body:hover {
+      .ant-card-meta-title > a {
+        color: @primary-color;
+      }
+    }
+  }
+}
+.courseContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  :global{
+    .ant-card-meta-detail{
+      width: 100% ;
+      margin-top: 15px;
+    }
+    .ant-card-meta-avatar{
+      padding: 0;
+    }
+  }
+}
+.courseImg{
+  width: 100%;
+  height: 160px;
+}
+
+.flexDiv{
+  text-align: left;
+  div{
+    height: 72px;
+    line-height: 24px;
+  }
+  span{
+    display: flex;
+    height: 42px;
+    line-height: 21px;
+    justify-content: space-around;
+    p:first-child{
+      flex: 3;
+    }
+    p:last-child{
+      flex: 2;
+    }
+
+  }
+}
